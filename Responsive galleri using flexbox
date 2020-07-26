@@ -1,0 +1,83 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+    <html>
+    <head>
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+           body{
+               margin:0;
+           }
+
+           .header{
+               text-align:center;
+               padding:40px;
+           }
+           .row{
+               display:flex;
+               flex-wrap:wrap;
+           }
+           .column{
+              flex:25%;
+              max-width:25%;
+              padding:0 3px;
+           }
+           .column img{
+               margin-top:5px;
+               vertical-align:middle;
+               width:100%;
+           }
+
+            @@media screen and (max-width:700px) {
+                .column {
+                    flex: 50%;
+                    max-width: 50%;
+                }
+
+            @@media screen and (max-width:500px) {
+                    .column {
+                        flex:100%;
+                        max-width: 100%;
+                    }
+                }
+        </style>
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>Flexbox Galleri</h1>
+            <p>galleri using css flexbox </p>
+
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="~/img/img1.jpg" />
+                <img src="~/img/img10.jpg" />
+                <img src="~/img/img11.jpg" />
+                <img src="~/img/img12.jpg" />
+
+            </div>
+            <div class="column">
+                <img src="~/img/img13.jpg" />
+                <img src="~/img/img14.jpg" />
+                <img src="~/img/img15.jpg" />
+                <img src="~/img/img16.jpg" />
+            </div>
+            <div class="column">
+                <img src="~/img/img17.jpg" />
+                <img src="~/img/img2.jpg" />
+                <img src="~/img/img3.jpg" />
+                <img src="~/img/img4.jpg" />
+            </div>
+            <div class="column">
+                <img src="~/img/img5.jpg" />
+                <img src="~/img/img6.jpg" />
+                <img src="~/img/img7.jpg" />
+                <img src="~/img/img8.jpg" />
+            </div>
+        </div>
+
+    </body>
+    </html>
