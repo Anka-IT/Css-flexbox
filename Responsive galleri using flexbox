@@ -1,6 +1,3 @@
-@{
-    ViewBag.Title = "Home Page";
-}
     <html>
     <head>
         <style>
